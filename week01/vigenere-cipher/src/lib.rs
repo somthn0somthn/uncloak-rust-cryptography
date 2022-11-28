@@ -1,8 +1,7 @@
 pub fn gen_keystream(key: &str, length: u32) -> String {
     if key.len() >= length as usize {
-        let mut new_key = key;
         let index = length as usize;
-        new_key = &new_key[0..index];
+        let new_key = &key[0..index];
         return new_key.to_string()
     };
     
