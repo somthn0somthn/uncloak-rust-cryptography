@@ -10,10 +10,10 @@ As cryptocurrency funds have been increasingly moved off exchanges, out of hot w
 435
 
 ## Q4. Suppose Bob receives a messages signed using a digital signature scheme with Alice’s secret signing key. Does it prove that Alice saw the message and chose to sign.
-In theory, yes, but if the operative word is "prove," and its taken literally, then the limitations inherent in the scheme prevent that from being so. A computer computes the signature and that computer could be compromised, for instance.
+No. A computer computes the signature and that computer could be compromised, for instance.
 
 ## Q6. Suppose a chosen-ciphertext attacker cannot recover the secret decryption key for an encryption scheme. Does this mean the encryption scheme is secure?
-Most likely yes, as long as the encryption scheme is reasonably strong.
+Most likely yes, as long as the encryption scheme is reasonably strong. XXXWRONGXXX
 
 
 ## Q7. Consider a symmetric-key cryptosystem in which cryptographic keys are randomly selected from the set of all n-bit strings. Approximately what should n be in order to provide 128 bits of security against a birthday attack.
