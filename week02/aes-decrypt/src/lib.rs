@@ -1,4 +1,4 @@
-/* use openssl::symm::{Cipher, Mode};
+use openssl::symm::{Cipher, Mode};
 use openssl::symm::Crypter;
 use openssl::error::ErrorStack;
 use hex::encode;
@@ -37,4 +37,3 @@ fn test_chapter3question8() {
     assert_eq!(text.to_hex(), result.to_hex());
 }
 
- */
