@@ -1,0 +1,20 @@
+[package]
+name = "aes-decrypt"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+openssl = "0.10.43"
+hex = "0.4"
+rustc-serialize = "0.3"
+generic-array = "0.14.6"
+des = "0.8.1"
+cipher = "0.4.2"
+
+[dev-dependencies]
+cipher = { version = "0.4.2", features = ["dev"] }
+
+[features]
+zeroize = ["cipher/zeroize"]
