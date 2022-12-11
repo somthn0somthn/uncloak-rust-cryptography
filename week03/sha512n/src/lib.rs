@@ -12,8 +12,6 @@ pub fn question1(hasher: &mut Sha512) {
     let n = 2;
         
     let mut rng = rand::thread_rng();
-    
-    //array of u8 => one u8 int => 8-bit
     let mut array: GenericArray<u8, U2> = GenericArray::default();
     let mut result2: &[u8] = result.as_slice();
     result2 = &result2[0..n];

@@ -1,0 +1,1 @@
+/home/s/Desktop/study/cryptography-course/course/uncloak-rust-cryptography/week03/mac/target/debug/mac: /home/s/Desktop/study/cryptography-course/course/uncloak-rust-cryptography/week03/mac/src/lib.rs /home/s/Desktop/study/cryptography-course/course/uncloak-rust-cryptography/week03/mac/src/main.rs
