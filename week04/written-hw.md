@@ -2,12 +2,13 @@ Justify or disqualify each of the following schemes, with message , tag , and ci
 
 ///SSH - Mac and enc
 
-1a) t = MAC(m) c = E(m), send (c,t) 
-    reordering attack 
-    {t1 .. tn } = MAC {m1 .. mn}
-    c'          = E(m') where (c', m') ∈ {(c,m)}
-    t'          = MAC (m') where (t', m') ∈ {(t,m)}
-    (m', t') is valid
+1a) 
+t = MAC(m) c = E(m), send (c,t) 
+reordering attack 
+{t1 .. tn } = MAC {m1 .. mn}
+c'          = E(m') where (c', m') ∈ {(c,m)}
+t'          = MAC (m') where (t', m') ∈ {(t,m)}
+(m', t') is valid
     
 1a') t[0..n] = m[len-n..len] (e.g. mac outputs a few bits of plain text)
     |m'| < |m| => |x|^(L - n) (the remainder of message unencrypted is shorter)
