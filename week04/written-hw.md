@@ -1,6 +1,7 @@
 Justify or disqualify each of the following schemes, with message , tag , and ciphertext.
 
 ///SSH - Mac and enc
+
 1a) t = MAC(m) c = E(m), send (c,t) 
     reordering attack 
     {t1 .. tn } = MAC {m1 .. mn}
@@ -14,6 +15,7 @@ Justify or disqualify each of the following schemes, with message , tag , and ci
     c = c' is considered valid
    
 MAC-then-encrypt
+
 1b) t     = MAC(m)    c     = E ( m || t ) send c [SSL]
     ~ padding attack
     c' = E(m'[0...m(n+1)] || t'[t[1] ..t[n]])
