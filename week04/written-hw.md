@@ -10,23 +10,26 @@ c'          = E(m') where (c', m') ∈ {(c,m)} \
 t'          = MAC (m') where (t', m') ∈ {(t,m) } \
 (m', t') is valid \
     
-1a') t[0..n] = m[len-n..len] (e.g. mac outputs a few bits of plain text)
-    |m'| < |m| => |x|^(L - n) (the remainder of message unencrypted is shorter)
-    c = E'(m') = E'(m) > E(m') = E(m) (a hit is now possible with few guesses reducing cost of bruted forcing)
-    c = c' is considered valid
+1a') 
+t[0..n] = m[len-n..len] (e.g. mac outputs a few bits of plain text) \
+|m'| < |m| => |x|^(L - n) (the remainder of message unencrypted is shorter) \
+c = E'(m') = E'(m) > E(m') = E(m) (a hit is now possible with few guesses reducing cost of bruted forcing) \
+c = c' is considered valid \
    
 MAC-then-encrypt
 
-1b) t     = MAC(m)    c     = E ( m || t ) send c [SSL]
-    ~ padding attack
-    c' = E(m'[0...m(n+1)] || t'[t[1] ..t[n]])
-    c' = c
-    c' is considered valid
+1b) 
+t     = MAC(m)    c     = E ( m || t ) send c [SSL] \
+~ padding attack \
+c' = E(m'[0...m(n+1)] || t'[t[1] ..t[n]]) \
+c' = c \
+c' is considered valid \
     
 
 Encrypt-then-mac 
-1c) t = MAC(c)    c = E (m) send (c, t) [IPsec]
-    -always provides authenticated encryption if CPA secure as long as c -> t is one-to-one
+1c) 
+t = MAC(c)    c = E (m) send (c, t) [IPsec] \
+-always provides authenticated encryption if CPA secure as long as c -> t is one-to-one \
 
 
 2) TLS Handshake Security
