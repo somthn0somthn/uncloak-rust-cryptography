@@ -10,9 +10,6 @@ jobs:
       - checkout
       - run: cargo --version
       - run:
-          name: Set working directory
-          command: "cd /home/week05/rust-testing"
-      - run:
           name: Run Tests
           command: "cargo test"
 
