@@ -11,11 +11,7 @@ enum ArrayError {
     //#[error("wrong typed pushed: {0}")]
     //WrongPushType(T),
 }
-///See last ChatGPT out, but I think you could use PhantomData
-/// To indicate whether the Array were full, and then perhaps
-/// pipe then this into the error data
-/// 
-/// 
+
 #[derive(Debug)]
 struct ArrayVec<T: Copy + core::fmt::Debug, const N: usize> {
     values: [Option<PhantomPointer<T>>; N],

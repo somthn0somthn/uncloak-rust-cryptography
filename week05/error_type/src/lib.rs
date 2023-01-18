@@ -51,8 +51,6 @@ impl<T: Copy + core::fmt::Debug + PartialEq, const N: usize> ArrayVec<T, N> {
         self.len += 1;
         Ok(())
     }
-    //so for the the malicious featuer pop and derefernce a PhantomPointer that contains a null pointer,
-    //See the end of the ChatGPT discussion to continue
     fn len(&self) -> Result<usize, ArrayError> {
         let mut counter = 0;
         for i in self.values {
