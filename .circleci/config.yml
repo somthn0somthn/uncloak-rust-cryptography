@@ -11,7 +11,7 @@ jobs:
       - run: cargo --version
       - run:
           name: Set working directory
-          command: "cd $CIRCLE_WORKING_DIRECTORY/week05"
+          command: "cd $CIRCLE_WORKING_DIRECTORY/week05/rust-testing"
       - run:
           name: Run Tests
           command: "cargo test"
