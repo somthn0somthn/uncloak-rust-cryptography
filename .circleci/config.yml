@@ -9,9 +9,9 @@ jobs:
     steps:
       - checkout
       - run: cargo --version
-       - run:
+      - run:
           name: Set working directory
-          command: "cd /week05"
+          command: "cd /path/to/project"
       - run:
           name: Run Tests
           command: "cargo test"
