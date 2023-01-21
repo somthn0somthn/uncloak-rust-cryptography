@@ -1,0 +1,1 @@
+/home/s/Desktop/study/cryptography-course/course/uncloak-rust-cryptography/week06/generic-array/target/debug/generic-array: /home/s/Desktop/study/cryptography-course/course/uncloak-rust-cryptography/week06/generic-array/src/main.rs
