@@ -1,3 +1,6 @@
+//Homework for
+//https://uncloak.org/courses/rust+cryptography+engineering/course-2022-12-16+HW+5+Solutions
+
 use anyhow::{anyhow, Error};
 use core::ops::Deref;
 use std::marker::PhantomData;
