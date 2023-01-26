@@ -13,6 +13,10 @@ An attacker, upon seeing part of the CSPRNG output, should not be able to predic
 
 # CH10
 
+# Compute (397^-1 mod 2357)  by hand. Page 18 of https://drive.google.com/drive/u/0/folders/1ILBHUZrDZDku3HfK1yyp6AbBD_F3nRm5 describes a convenient tabular method for calculating the EEA by hand.
+
+
+
 ### NOTES
 -random data used to seed a PRNG
 -pooling entropy reduces attack vectors on PRNGs => Yarrow try to estimate entropy, which is difficult to do

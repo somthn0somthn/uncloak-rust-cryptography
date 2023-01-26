@@ -155,9 +155,9 @@ fn main() {
 
     array.try_push(b);
 
-    //will lead to a seg_fault if popped
-    let final_result = array.try_push_malicious(d);
-    //let final_result = array.try_push(d);
+    //will lead to a seg_fault if popped, per hw
+    //let final_result = array.try_push_malicious(d);
+    let final_result = array.try_push(d);
 
     println!("array: \n{:?}", array);
     println!(

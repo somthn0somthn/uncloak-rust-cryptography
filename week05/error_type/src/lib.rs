@@ -120,6 +120,7 @@ fn test_has_malicious() {
     test_array.try_push(b);
 
     test_array.try_push(c);
+    //switching to test below will catch malicious feature, per hw
     //test_array.try_push_malicious(c);
 
     assert!(!test_array.has_malicious())
