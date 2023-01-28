@@ -15,8 +15,27 @@ An attacker, upon seeing part of the CSPRNG output, should not be able to predic
 
 # Compute (397^-1 mod 2357)  by hand. Page 18 of https://drive.google.com/drive/u/0/folders/1ILBHUZrDZDku3HfK1yyp6AbBD_F3nRm5 describes a convenient tabular method for calculating the EEA by hand.
 
+1603
 
+# Recursively implement the Extended Euclidean Algorithm. Use the above exercise as a test case.
+
+# Implement the Miller-Rabin primality check.
 
 ### NOTES
 -random data used to seed a PRNG
 -pooling entropy reduces attack vectors on PRNGs => Yarrow try to estimate entropy, which is difficult to do
+
+if n > 1 && n = z(d) && d is smallest divsor => d is prime
+if ∃ c < d s.t. n = z(yc) then d is not prime && not the smallest divisor greater than 1 >> reductio ad absurdum
+
+∃ infinite number of primes
+p1,p2...pk = n 
+
+(n+1) mod (p1..pk) = 1 >> new prime
+
+you can compute the modulo operation at any point in an equation
+
+-set of numbers modulo a prime p = `finite field`
+
+-Zp = finite field modulo p
+
