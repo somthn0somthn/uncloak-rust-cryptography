@@ -29,6 +29,4 @@ fn eea(a: u32, b: u32) -> (u32, i32, i32) {
 fn main() {
     let answer = eea(397, 2357);
     println!("answer: {:?}", answer);
-    let call = is_prime();
-    println!("call: {call}");
 }
