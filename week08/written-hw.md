@@ -14,10 +14,8 @@ x mod 7  = {0,1,2,3,4,5,6} because 7 is not a divosor of 30
 
 ## Bob would have chosen `p = 83, g = 2` How many unique choices for x does Alice have now? What if Bob chose `p = 83, g = 3`?
 
-1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,16384,32768
-83,166,249,332,415,498,581,664,747,830,913,996,1079
-
-as
+82
+41
 
 ## 576001 is the prime with factorization `p - 1 = (2^9) * (3^2) * (5^3)`. Find a generator `g != 1` with order `|g| < 10`.
 
