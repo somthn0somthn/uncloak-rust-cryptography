@@ -93,4 +93,8 @@ fn main() {
         is_gen.0,
         is_gen.1.len()
     );
+
+    let question = fast_power(11.into(), 504.into(), 1009.into());
+
+    println!("question: {:?}", question);
 }
