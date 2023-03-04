@@ -3,7 +3,9 @@ use num_traits::cast::ToPrimitive;
 
 //binary expansion, then exponential expansion
 fn fast_power(g: BigInt, a: BigInt, modulus: BigInt) -> BigInt {
-    let mut mutable: BigInt = a;
+    if a > u64::MAX.into() {panic!()}
+    if a == 0.into() { return BigInt::from(1) }
+    let mut mutable: BigInt = a % &modulus -1;
     let mut binary_expansion: Vec<u64> = Vec::new();
 
     let two = BigInt::from(2);
@@ -12,7 +14,7 @@ fn fast_power(g: BigInt, a: BigInt, modulus: BigInt) -> BigInt {
         binary_expansion.push(bin.to_u64().unwrap());
         mutable /= &two;
     }
-    
+
     let mut exponential_expansion: Vec<BigInt> = Vec::new();
     for i in 0..binary_expansion.len() {
         let power: u32 = 2_u32.pow(i as u32);
@@ -21,10 +23,11 @@ fn fast_power(g: BigInt, a: BigInt, modulus: BigInt) -> BigInt {
     }
 
     binary_expansion
-    .iter()
-    .zip(exponential_expansion.iter())
-    .filter(|(a, _)| **a ==1)
-    .fold(BigInt::from(1), |acc, (_,b)| acc * b.clone()) % modulus
+        .iter()
+        .zip(exponential_expansion.iter())
+        .filter(|(a, _)| **a == 1)
+        .fold(BigInt::from(1), |acc, (_, b)| acc * b.clone())
+        % modulus
 }
 
 #[test]

@@ -16,19 +16,26 @@
 (-754) | 1603
 
 #implement the modular Fast Powering Algorithm for big ints.
-- see p24
-- see Boneh Cryptography Course:: Week05 Arithmetic algorithms - near end of vid
+see code
 
 
 #(1.11a) For positive a,b elem Z  suppose there exists u,v  satisfying au + bv = 1. Prove gcd(a,b) =1.
 - see page 16,29,14,17
+- answer page 20 proposition 1.13
 - see YT Introduction to Number theory lecture 4
-- there is 
+- Fermats Little theorem
 
 start by defining a larger than b and enter the EEA to end with gcd of 1 using symbols
 #(1.18) Suppose g^a == 1 mod m, g^b == 1 mod m. Prove that g^(gcd(a,b)) == 1 mod m.
 - p28 might help get you started
+- p33,63
 
+gcd(g,m) = 1 >> gu + mv = 1
+Then the ord(p) divides a & b => a & b => x(ord p) perhaps
+Meaning that gcd(a,b) => a || b  => g ^ a || b = 1 mod m by definition
 
 # Using a program, obtain a generator for the group of integers in Z/1009Z and Z/2357Z. Both values are prime. What method did you use to check if the candidate was a generator?
-- see page 21
+z/1009z = 11
+z/2357z = 2
+
+Used fast_power algorithm alongside some basic checks. See code.
